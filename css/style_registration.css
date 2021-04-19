@@ -1,0 +1,41 @@
+:root {
+    --dark-blue: #222222;
+    --pink: #F1E4E6;
+    --dark-pink: pink;
+    --white: rgb(255, 255, 255);
+    --gray: #9F9F9F;
+    --light-gray: #F8F8F8;
+}
+
+.registration__heading {
+    background: #F8F3F4;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.registration__heading-titel {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--dark-pink);
+    text-transform: uppercase;
+}
+
+.registration__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registration__form-option {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.registration__form-data {
+    display: flex;
+    flex-direction: column;
+
+}
