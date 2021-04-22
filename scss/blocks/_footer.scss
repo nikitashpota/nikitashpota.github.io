@@ -1,0 +1,92 @@
+.footer {
+    min-height: 450px;
+    background-image: url(../img/footter.jpg);
+    background-size: cover;
+
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer__review {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 360px;
+    }
+    
+    .footer__review-img {
+        margin: 85px 0 36px 0;
+    }
+    
+    .footer__review-text {
+        @include font(20px, 1);
+    }
+    
+    .footer__review-text--italics {
+        @include font(20px,1,400,italic);
+    }
+    
+    .footer__subscribe {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 360px;
+    }
+    
+    .footer__subscribe-heading {
+        margin-top: 150px;
+        @include font(24px, 1, 700);
+        text-transform: uppercase;
+    }
+    
+    .footer__subscribe-sub-heading {
+    
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 16px 0 16px;
+    
+    }
+    
+    .footer__form {
+        margin-top: 32px;
+        display: flex;
+    }
+    
+    .footer__form-email {
+        border: none;
+        background-color: #E1E1E1;
+        ;
+        border-radius: 50px 0 0 50px;
+        width: 200px;
+        height: 50px;
+        padding-left: 30px;
+    
+    }
+    
+    .footer__form-button {
+        border: none;
+        background-color: $dark-pink;
+    
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+    
+        border-radius: 0 50px 50px 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        color: $white;
+    }
+
+    &_margin{
+        margin-top: 96px;
+    }
+}
+

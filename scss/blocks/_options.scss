@@ -1,0 +1,33 @@
+.options {
+    background-color: $dark-blue;
+    margin-top: 95px;
+
+    .options__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .options__item {
+        margin: 100px 0 100px;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .options__item-heading {
+        @include font(20px, 1);
+        color: $light-gray;
+        text-align: center;
+        margin: 16px 0 16px;
+    }
+    
+    .options__item-text {
+        @include font(14px, 1, 300);
+        color: $gray;
+        text-align: center;
+    }
+}
+
+
+
