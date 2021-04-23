@@ -22,6 +22,62 @@
         background-color: $light-gray;
         margin: 0 0 30px;
     }
+
+    .products__item-background{
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        width: 360px;
+        height: 420px;
+    }
+
+    .products__item-img{
+        position: absolute;
+        width: 360px;
+        height: 420px;
+    }
+
+    .products__item-button{
+        @include mybutton($dark-blue, $white);
+        padding-left: 30px;
+        background: none;
+        display: none;
+        position: absolute;
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .products__item-button-text{
+        position: relative;
+        @include font(14px, 16px);
+        color: $white;
+    }
+
+    .products__item-button-text::before{
+
+        content: '';
+        width: 25px;
+        height: 25px;
+        background-image: url(../img/cart.svg);
+        background-repeat: no-repeat;
+        background-size:contain;
+        left: -20px;
+        top: -2px;
+        position: absolute;
+
+    }
+
+    .products__item-background:hover .products__item-img{
+        opacity: 0.5;
+    }
+
+    .products__item-background:hover .products__item-button{
+        display: block;
+        z-index: 1;
+    }
     
     .products__item-heading {
         @include font(13px, 1, 400);

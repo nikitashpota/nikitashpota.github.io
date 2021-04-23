@@ -28,10 +28,7 @@
             background-image: url(../img/categories_accesories.jpg);
         }
     }
-    
-
- 
-    
+      
     .categories__text {
         @include font(16px, 1 ,400);
         color: $white;
@@ -42,7 +39,6 @@
         @include font(18px, 1 ,900);
         color: $dark-pink;
         text-transform: uppercase;
-    
     }
     
     .categories__item {

@@ -63,10 +63,8 @@
     .item-link__text {
         color: $dark-blue;
         text-decoration: none;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-    
+        @include font(14px, 1 ,400);
+  
     }
 
     .display-block {

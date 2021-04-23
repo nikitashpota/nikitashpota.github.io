@@ -13,7 +13,21 @@
     .promo__heading {
         @include font(48px, 58px, 900);
         text-transform: uppercase;
+        position: relative;
     
+    }
+
+    .promo__heading:before{
+        content: '';
+        
+        position:absolute;
+
+        top: 5px;
+        left: -30px;
+        height: 95px;
+    
+        width: 12px;
+        background-color: $dark-pink;
     }
     
     .promo__sub-heading {

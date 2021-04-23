@@ -1,6 +1,38 @@
-@mixin font($font-size, $line-height, $font-weight: 400, $font-style: normal) {
+@mixin font($font-size, $line-height: 1, $font-weight: 400, $font-style: normal) {
     font-size: $font-size;
     line-height: $line-height;
     font-weight: $font-weight;
     font-style: $font-style;
 }
+
+@mixin mybutton($color_1, $color_2) {
+    width: 150px;
+    height: 45px;
+    border: 2px solid $color_2;
+    text-transform: uppercase;
+      color: $color_1;
+    background-color: $color_2;
+      transition: $transition;
+      &:hover {
+          background-color: $color_1;
+          border-color: $color_1;
+          color: $color_2;
+      }
+      &:active {
+          background-color: $color_1;
+          border-color: $color_1;
+          color: $color_2;
+          box-shadow: none;
+      }
+      &:focus, &:active:focus {
+          background-color: $color_1;
+          border-color: $color_1;
+          color: $color_2;
+          outline: 5px auto $color_1;
+      }
+      &:visited {
+          background-color: $color_1;
+          border-color: $color_1;
+      }
+  }
+  
