@@ -1,5 +1,8 @@
 .products{
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
     .products__heading {
         @include font(30px, 36px, 400);
         text-align: center;
@@ -16,10 +19,13 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 48px 0 0 0;
+<<<<<<< HEAD
 
         @include tablet{
             justify-content: center;
         }
+=======
+>>>>>>> main
     }
     
     .products__item {

@@ -36,6 +36,7 @@
       }
   }
   
+<<<<<<< HEAD
 @mixin tablet {
     @media (max-width: $desktop-width) {
         @content;
@@ -47,3 +48,5 @@
         @content;
     }
 }
+=======
+>>>>>>> main

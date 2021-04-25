@@ -1,17 +1,23 @@
 .options {
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
     background-color: $dark-blue;
     margin-top: 95px;
 
     .options__list {
         display: flex;
         justify-content: space-between;
+<<<<<<< HEAD
 
         @include tablet{
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
+=======
+>>>>>>> main
     }
     
     .options__item {
@@ -20,10 +26,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+<<<<<<< HEAD
 
         @include tablet{
             margin: 24px 0 24px;
         }
+=======
+>>>>>>> main
     }
     
     .options__item-heading {
@@ -38,12 +47,15 @@
         color: $gray;
         text-align: center;
     }
+<<<<<<< HEAD
 
     .options__item_margin-botton{
         @include tablet{
             margin-bottom: 64px;
         }
     }
+=======
+>>>>>>> main
 }
 
 
