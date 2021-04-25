@@ -1,0 +1,122 @@
+.products{
+
+    .products__heading {
+        @include font(30px, 36px, 400);
+        text-align: center;
+    }
+    
+    .products__text {
+        @include font(14px, 17px, 400);
+        color: $gray;
+        text-align: center;
+    }
+    
+    .products__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 48px 0 0 0;
+
+        @include tablet{
+            justify-content: center;
+        }
+    }
+    
+    .products__item {
+        width: 360px;
+        background-color: $light-gray;
+        margin: 0 0 30px;
+    }
+
+    .products__item-background{
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        width: 360px;
+        height: 420px;
+    }
+
+    .products__item-img{
+        position: absolute;
+        width: 360px;
+        height: 420px;
+    }
+
+    .products__item-button{
+        @include mybutton($dark-blue, $white);
+        padding-left: 30px;
+        background: none;
+        display: none;
+        position: absolute;
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .products__item-button-text{
+        position: relative;
+        @include font(14px, 16px);
+        color: $white;
+    }
+
+    .products__item-button-text::before{
+
+        content: '';
+        width: 25px;
+        height: 25px;
+        background-image: url(../img/cart.svg);
+        background-repeat: no-repeat;
+        background-size:contain;
+        left: -20px;
+        top: -2px;
+        position: absolute;
+
+    }
+
+    .products__item-background:hover .products__item-img{
+        opacity: 0.5;
+    }
+
+    .products__item-background:hover .products__item-button{
+        display: block;
+        z-index: 1;
+    }
+    
+    .products__item-heading {
+        @include font(13px, 1, 400);
+        text-transform: uppercase;
+        margin: 24px 0 0 18px;
+    }
+    
+    .products__item-text {
+        @include font(14px, 1, 300);
+        color: #5D5D5D;
+        margin: 12px 28px 12px 18px;
+    
+    }
+    
+    .products__item-price {
+    
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        color: $dark-pink;
+        margin: 0 0 20px 18px;
+    }
+    
+    .product__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .product__button {
+        border: $dark-pink solid 1px;
+        width: 210px;
+        min-height: 50px;
+        text-align: center;
+        background: none;
+        color: $dark-pink;
+    }
+}

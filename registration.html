@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <link rel="stylesheet" href="./css/reset.css">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
@@ -17,8 +17,8 @@
 <body>
     <header class="header">
         <div class="container header__wrapper">
-            <div><img class="header__logo" src="./img/logo-icon.svg" alt="logo" width="44" height="38"><img
-                    class="header__search" src="./img/loupe-icon.svg" alt="loupe" width="26" height="27"></div>
+            <div> <a href="./index.html"> <img class="header__logo" src="./img/logo-icon.svg" alt="logo" width="44" height="38"></a><img
+                class="header__search" src="./img/loupe-icon.svg" alt="loupe" width="26" height="27"></div>
             <div><button class="header__button" id="button" type="button"><img src="./img/burger-icon.svg" alt="burger"
                         width="32" height="23"></button>
                 <a class="header__link" href="./registration.html">
@@ -73,30 +73,33 @@
     </header>
     <main>
         <section class="registration">
-            <div class="registration__heading">
+            <div class="registration__heading registration__heading_margin">
                 <h2 class="registration__heading-titel container">registration</h2>
             </div>
 
             <form class="registration__form container" action="">
-                <fieldset class="registration__form-data">
-                    <label>Your Name
-                        <input type="text">
-                        <input type="text"></label>
-                    <div>
+                <fieldset class="registration__form-data form-data">
+                    <label class="form-data__name-text">Your Name</label>
+                    <input class="form-data__name-input" placeholder="First Name" type="text">
+                    <input class="form-data__name-input" placeholder="Last Name"  type="text">
+                    <div class="form-data__radio">
                         <input type="radio" id="maleChoice" name="male" value="male">
-                        <label class="label" for="maleChoice">Male</label>
+                        <label class="form-data__radio-text" for="maleChoice">Male</label>
 
                         <input type="radio" id="femaleChoice" name="male" value="female">
-                        <label class="label" for="femaleChoice">Female</label>
-                    </div>
-                    <label>Login details
-                        <input type="email">
-                        <input type="password"></label>
+                        <label class="form-data__radio-text" for="femaleChoice">Female</label>
 
-                    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+                        <input type="radio" id="otherChoice" name="male" value="other">
+                        <label class="form-data__radio-text" for="otherChoice">Other</label>
+                    </div>
+                    <label class="form-data__login">Login details</label>
+                        <input  class="form-data__name-input" type="email">
+                        <input  class="form-data__name-input" type="password">
+
+                    <p class="form-data__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
                         lowercase letters</p>
 
-                    <button>Join now <img src="./img/arrow.svg" alt="arrow"></button>
+                    <button class="form-data__button">Join now <img src="./img/arrow.svg" alt="arrow"></button>
                 </fieldset>
                 <div class="registration__form-option form__option">
                     <h2 class="form__option-heading">loyalty has its perks</h2>
@@ -117,7 +120,7 @@
 
     </main>
     <footer>
-        <section class="footer">
+        <section class="footer footer_margin">
             <div class="footer__wrapper container">
                 <div class="footer__review"><img class="footer__review-img" src="./img/footer-face.png"
                         alt="footer-face" width="100x" height="100px">
