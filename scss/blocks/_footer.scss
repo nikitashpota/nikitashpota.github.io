@@ -1,4 +1,5 @@
 .footer {
+
     min-height: 450px;
     background-image: url(../img/footter.jpg);
     background-size: cover;
@@ -7,6 +8,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include tablet{
+            flex-direction: column;
+        }
     }
     
     .footer__review {
@@ -35,12 +40,20 @@
         text-align: center;
         align-items: center;
         width: 360px;
+
+        @include tablet{
+            margin-bottom: 140px;
+        }
     }
     
     .footer__subscribe-heading {
         margin-top: 150px;
         @include font(24px, 1, 700);
         text-transform: uppercase;
+
+        @include tablet{
+            margin-top: 50px;
+        }
     }
     
     .footer__subscribe-sub-heading {

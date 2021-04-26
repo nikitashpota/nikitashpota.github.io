@@ -14,6 +14,11 @@
         padding-top: 36px;
         padding-left: 36px;
     }
+
+    .header__navigation_zindex{
+        position: absolute;
+        z-index: 1;
+    }
     
     .header__title {
         font-size: 14px;
@@ -72,3 +77,30 @@
     }
 }
 
+@media (max-width: $desktop-width) {
+    .header  {
+        padding: 0 16px;
+
+        .header__link {
+            margin: 0 0 0 25px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header  {
+        padding: 0;
+
+        .header__link {
+            margin: 0 0 0 25px;
+        }
+
+        .header__link_mobile-hidden{
+            display: none;
+        }
+
+        .header__button_mobile-hidden{
+            display: none;
+        }
+    }
+}

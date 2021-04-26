@@ -1,10 +1,17 @@
 .options {
+
     background-color: $dark-blue;
     margin-top: 95px;
 
     .options__list {
         display: flex;
         justify-content: space-between;
+
+        @include tablet{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     
     .options__item {
@@ -13,6 +20,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include tablet{
+            margin: 24px 0 24px;
+        }
     }
     
     .options__item-heading {
@@ -26,6 +37,12 @@
         @include font(14px, 1, 300);
         color: $gray;
         text-align: center;
+    }
+
+    .options__item_margin-botton{
+        @include tablet{
+            margin-bottom: 64px;
+        }
     }
 }
 

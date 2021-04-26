@@ -1,4 +1,5 @@
 .sub-footer {
+
     background-color: $dark-blue;
 
     .sub-footer__wrapper {
@@ -6,11 +7,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mobile{
+            flex-direction: column-reverse;
+        }
     }
     
     .sub-footer__text {
         @include font(16px, 1);
         color: $white;
+
+        @include mobile{
+            margin: 0 0 10px;
+        }
     }
     
     .sub-footer__media-button {
@@ -37,6 +46,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include mobile{
+            margin: 40px 0 40px 0;
+        }
     }
 }
 

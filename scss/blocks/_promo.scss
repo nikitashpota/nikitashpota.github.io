@@ -8,12 +8,29 @@
         display: flex;
         align-items: center;
         padding: 0 0 0 92px;
+
+        @include tablet{
+            padding: 0 0 0 68px;
+        }
+
+        @include mobile{
+            padding: 0 0 0 83px;
+            min-height: 363px;
+        }
     }
     
     .promo__heading {
         @include font(48px, 58px, 900);
         text-transform: uppercase;
         position: relative;
+
+        @include tablet{
+            @include font(48px, 52px, 900);
+        }
+
+        @include mobile{
+            @include font(38px, 46px, 900);
+        }
     
     }
 
@@ -27,16 +44,33 @@
         height: 95px;
     
         width: 12px;
-        background-color: $dark-pink;
+        background-color: #F16D7F;
     }
     
     .promo__sub-heading {
         @include font(37px, 44px, 700, normal);
         display: block;
+
+        @include tablet{
+            @include font(34px,39px,700)
+        }
+
+        @include mobile{
+            @include font(20px, 24px, 700)
+        }
     }
     
     .promo__sub-heading-pink {
         color: $dark-pink;
+    }
+
+    .promo__img{
+        width: 50%;
+        height: auto;
+
+        @include mobile{
+            display: none;
+        }
     }
 }
 
