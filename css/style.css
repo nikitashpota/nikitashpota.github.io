@@ -836,6 +836,10 @@ table {
   }
 }
 
+.registration {
+  margin: 0 0 30px;
+}
+
 .registration .registration__heading {
   background: #F8F3F4;
   min-height: 150px;
@@ -856,10 +860,22 @@ table {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .registration .registration__form {
+    flex-direction: column;
+  }
+}
+
 .registration .registration__form-option {
   display: flex;
   flex-direction: column;
   width: 650px;
+}
+
+@media (max-width: 768px) {
+  .registration .registration__form-option {
+    width: 100%;
+  }
 }
 
 .registration .registration__form-data {
@@ -873,10 +889,20 @@ table {
 
 .registration .form__option-heading {
   font-size: 24px;
-  font-style: normal;
+  line-height: 1;
   font-weight: 300;
+  font-style: normal;
   text-transform: uppercase;
   margin-bottom: 21px;
+}
+
+@media (max-width: 1490px) {
+  .registration .form__option-heading {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+  }
 }
 
 .registration .form__option-text {
@@ -887,6 +913,16 @@ table {
   margin-bottom: 21px;
 }
 
+@media (max-width: 1490px) {
+  .registration .form__option-text {
+    width: auto;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+
 .registration .form__option-item {
   margin-left: 32px;
   font-size: 24px;
@@ -894,6 +930,16 @@ table {
   font-weight: 300;
   margin-bottom: 16px;
   position: relative;
+}
+
+@media (max-width: 1490px) {
+  .registration .form__option-item {
+    width: auto;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+  }
 }
 
 .registration .form__option-item:before {
@@ -915,10 +961,16 @@ table {
 }
 
 .registration .form-data__name-input {
-  width: 360px;
+  width: 340px;
   height: 45px;
   margin-bottom: 21px;
   padding-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .registration .form-data__name-input {
+    width: 93%;
+  }
 }
 
 .registration [type="radio"] {
@@ -968,6 +1020,12 @@ table {
   margin: 0 0 40px;
 }
 
+@media (max-width: 768px) {
+  .registration .form-data__text {
+    width: 93%;
+  }
+}
+
 .registration .form-data__button {
   width: 170px;
   height: 50px;
@@ -1012,5 +1070,9 @@ table {
   .container {
     width: 92%;
   }
+}
+
+.display-none {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

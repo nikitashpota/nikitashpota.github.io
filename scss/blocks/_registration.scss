@@ -1,4 +1,5 @@
 .registration{
+  margin: 0 0 30px;
 .registration__heading {
     background: #F8F3F4;
     min-height: 150px;
@@ -18,12 +19,20 @@
     display: flex;
     justify-content: space-between;
 
+    @include mobile{
+      flex-direction: column;
+    }
+
 }
 
 .registration__form-option {
     display: flex;
     flex-direction: column;
     width: 650px;
+
+    @include mobile{
+      width: 100%;
+    }
 
 }
 
@@ -39,11 +48,13 @@
 
 .form__option-heading{
 
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
+    @include font(24px, 1, 300);
     text-transform: uppercase;
     margin-bottom: 21px;
+
+    @include tablet{
+      @include font(16px, 19px, 300);
+    }
 
 }
 
@@ -54,6 +65,11 @@
     font-weight: 300;
     margin-bottom: 21px;
 
+    @include tablet{
+      width: auto;
+      @include font(16px, 19px, 300);
+    }    
+
 }
 
 .form__option-item{
@@ -63,6 +79,11 @@
     font-weight: 300;
     margin-bottom: 16px;
     position: relative;
+
+    @include tablet{
+      width: auto;
+      @include font(16px, 19px, 300);
+    }    
 }
 
 .form__option-item:before {
@@ -88,10 +109,14 @@
   }
 
   .form-data__name-input{
-      width: 360px;
+      width: 340px;
       height: 45px;
       margin-bottom: 21px;
       padding-left: 16px;
+
+      @include mobile{
+        width: 93%;
+      }
 
   }
 
@@ -145,6 +170,10 @@
     font-weight: 300;
     color: $gray;
     margin: 0 0 40px;
+
+    @include mobile{
+      width: 93%;
+    }
 }
 
 .form-data__button{
