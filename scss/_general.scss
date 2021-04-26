@@ -18,6 +18,10 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
     @include tablet{
         width: 96%;
@@ -27,6 +31,7 @@
         width: 92%;
     }
 
+<<<<<<< HEAD
 }
 
 
@@ -41,3 +46,23 @@
 //         width: 92%;
 //     }
 // }
+=======
+}
+
+
+// @media (max-width: $desktop-width) {
+//     .container {
+//         width: 96%;
+//     }
+// }
+
+// @media (max-width: $tablet-width) {
+//     .container {
+//         width: 92%;
+//     }
+// }
+=======
+}
+
+>>>>>>> main
+>>>>>>> main

@@ -1,5 +1,12 @@
 .sub-footer {
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
+>>>>>>> main
     background-color: $dark-blue;
 
     .sub-footer__wrapper {
@@ -7,19 +14,37 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
         @include mobile{
             flex-direction: column-reverse;
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> main
     }
     
     .sub-footer__text {
         @include font(16px, 1);
         color: $white;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
         @include mobile{
             margin: 0 0 10px;
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> main
     }
     
     .sub-footer__media-button {
@@ -46,10 +71,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
         @include mobile{
             margin: 40px 0 40px 0;
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> main
     }
 }
 

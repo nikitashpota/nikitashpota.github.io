@@ -8,6 +8,10 @@
         display: flex;
         align-items: center;
         padding: 0 0 0 92px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
         @include tablet{
             padding: 0 0 0 68px;
@@ -17,12 +21,21 @@
             padding: 0 0 0 83px;
             min-height: 363px;
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> main
     }
     
     .promo__heading {
         @include font(48px, 58px, 900);
         text-transform: uppercase;
         position: relative;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
         @include tablet{
             @include font(48px, 52px, 900);
@@ -31,6 +44,11 @@
         @include mobile{
             @include font(38px, 46px, 900);
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> main
     
     }
 
@@ -44,12 +62,24 @@
         height: 95px;
     
         width: 12px;
+<<<<<<< HEAD
         background-color: #F16D7F;
+=======
+<<<<<<< HEAD
+        background-color: #F16D7F;
+=======
+        background-color: $dark-pink;
+>>>>>>> main
+>>>>>>> main
     }
     
     .promo__sub-heading {
         @include font(37px, 44px, 700, normal);
         display: block;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
         @include tablet{
             @include font(34px,39px,700)
@@ -58,11 +88,20 @@
         @include mobile{
             @include font(20px, 24px, 700)
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> main
     }
     
     .promo__sub-heading-pink {
         color: $dark-pink;
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
     .promo__img{
         width: 50%;
@@ -72,6 +111,11 @@
             display: none;
         }
     }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> main
 }
 
 

@@ -1,17 +1,33 @@
 .options {
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
+>>>>>>> main
     background-color: $dark-blue;
     margin-top: 95px;
 
     .options__list {
         display: flex;
         justify-content: space-between;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
         @include tablet{
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> main
     }
     
     .options__item {
@@ -20,10 +36,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
         @include tablet{
             margin: 24px 0 24px;
         }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> main
     }
     
     .options__item-heading {
@@ -38,12 +63,21 @@
         color: $gray;
         text-align: center;
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 
     .options__item_margin-botton{
         @include tablet{
             margin-bottom: 64px;
         }
     }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
+>>>>>>> main
 }
 
 
