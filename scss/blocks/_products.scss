@@ -15,7 +15,8 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 48px 0 0 0;
+        margin: 48px 0 48px 0;
+        gap: 30px;
 
         @include tablet{
             justify-content: center;
@@ -25,7 +26,6 @@
     .products__item {
         width: 360px;
         background-color: $light-gray;
-        margin: 0 0 30px;
     }
 
     .products__item-background{
